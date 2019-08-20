@@ -1,0 +1,373 @@
+/* in this file, it's for standard and generic information which you can use it in many palces. */
+:root {
+	--color-main:gray;
+	--color-sub:white;
+		--color-off:#bbb;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3,h4,h5,h6 {
+	font-size:1em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+header {
+/*	background-color: white;
+*/	padding: 1em 0;
+}
+
+header h1,
+header p {
+	margin: 0;
+
+}
+
+.container {
+	max-width: 500px;
+}
+
+.hidden {
+	display: none;
+}
+
+.icon {
+	font-style:normal;
+	display:inline-block;
+	width:1em;
+	height:1em;
+	text-align:center;
+	vertical-align: middle;
+}
+
+[for='hamburger-menu'] {
+	display:none;
+}
+
+
+/* Classes */
+
+
+
+.media-image {
+	max-width:100%;
+	vertical-align: middle;
+}
+
+.nav-tabs ul,
+.nav-pills ul,
+.nav-horizontal ul,
+.flex-parent {
+	display: flex;
+}
+
+.nav-tabs li,
+.nav-stretch li,
+.flex-child {
+	flex: 1 1 auto;
+
+}
+
+.flex-parent {
+	display: flex;
+}
+.flex-child {
+	flex: 1 1 auto;
+}
+.flex-none {
+	flex: none;
+}
+
+.flex-vertical {
+	flex-direction: column;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-center {
+	align-items: center;
+}
+
+
+.collapsed, 
+.nav ul {
+list-style-type: none;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+}
+
+.nav ul {
+	display: flex;
+}
+
+
+.nav a {
+	text-align: center;
+	display: block;
+	/*padding: 0.2em 0.5em;*/
+	color: var(--color-main);
+
+}
+@media (max-width: 1000px) {
+	
+	h1 {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width:700px) {
+	.nav .hamburger-menu {
+		display:none;
+	}
+	[for='hamburger-menu'] {
+		display:block;
+	}
+	#hamburger-menu:checked ~ .nav {
+		flex:1 0 100%;
+	}
+	#hamburger-menu:checked ~ .nav>.hamburger-menu {
+		display:block;
+		margin-top:1em;
+	}
+	#hamburger-menu:checked ~ .nav a {
+		text-align:right;
+	}
+}
+
+
+.nav .active>a,
+.nav a:hover {
+	color: var(--color-sub);
+
+}
+
+.nav a:hover {
+		text-decoration:none;
+	background-color:var(--color-off);
+}
+
+.nav .active>a {
+	background-color:#e99da7;
+}
+
+.nav-horizontal li {
+	text-align:center;
+}
+
+.nav-pills a {
+	border-radius:1em; /* to change the shape of the box behind the nav text. */
+	padding:0.2em 1em;
+}
+
+.nav-tabs a {
+	color:var(--color-off);
+	border-bottom:3px solid var(--color-off);
+}
+
+.nav-tabs a:hover {
+	background-color:transparent;
+	color:var(--color-main);
+}
+.nav-tabs .active>a {
+	background-color:transparent;
+	color:var(--color-main);
+	border-bottom-color:var(--color-main);
+}
+
+.nav-crumbs a{ 
+	color:inherit;
+	background-color:transparent;
+		display:inline-block;
+			font-weight:normal;
+
+}
+
+.nav-crumbs li:before {
+	content:'/';
+	margin-left:0.1em;
+	margin-right:0.1em;
+	float:left;
+}
+
+.nav-crumbs a:hover{ 
+	color:var(--color-off);
+	background-color:transparent;
+	text-decoration:underline;
+}
+
+.nav-crumbs .active>a{ 
+	color:var(--color-main);
+	background-color:transparent;
+	text-decoration:underline;
+
+}
+
+
+
+
+.card {
+	margin-top: 1em;
+	margin-bottom: 1em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 3px;
+     box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+}
+
+.card :first-child {
+	margin-top: 0;
+}
+.card :first-child {
+	margin-bottom: 0;
+}
+
+.clearfix:after,
+.card:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.view-window {
+	height: 100vh;
+	background-position: center;
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.view-window>img {
+	max-width: calc(100% - 100px); /* here the 100pox is to define the both sides which means 50px each side.*/
+	max-height: calc(100% - 100px);
+}
+
+.centered-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* <dl> means definition lists, inside it, <dt> means title <dd> means content.*/
+.deflist dt {
+	font-weight:600;
+	float:left;
+	width:10em;
+}
+.deflist dd {
+	margin-left:0;
+	font-weight: 100;
+	float:left;
+	width:calc(100% - 10em);
+}
+.deflist dt:not(:first-of-type), .deflist dd:not(:first-of-type) {
+    border-top: 1px solid #ddd;
+    padding-top: 1em;
+}
+
+
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.table td,
+.table th {
+	    text-align: center;
+	padding:0.2em 0.5em;
+
+
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color:rgba(0,0,0,0.1);
+}
+.table.target tbody tr:hover {
+	background-color:rgba(0,0,0,0.2);
+}
+.table.target tbody td:hover {
+	background-color:rgba(255,200,200,0.4);
+}
+
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+	border-top:1px solid black;
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left:1px solid black;
+}
+
+.table.lined.all, 
+.table.lined.outline {
+	border:1px solid black;
+}
+
+
+.hidden {
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

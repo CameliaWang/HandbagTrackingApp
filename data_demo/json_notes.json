@@ -1,0 +1,60 @@
+{
+
+	"notes": [
+"JSON: JavaScript Object Notation.",
+"JSON is text, written with JavaScript object notation.",
+"JSON is a syntax for storing and exchanging data.",
+"JSON files cannot have comments. Write any notes in this array.",
+"A JSON document always starts with either an array [] or an object {}",
+"Commas go between values in objects and arrays, not necessarily at the end of lines.",
+"Object property names must be inside quotation marks.",
+"String quotation marks must be double quotes, not single quotes."
+			 ],
+	"users": [
+				{
+					"name":"Camelia",
+					"type":"Student",
+					"Classes":[663, 617, 755]
+				},
+				{
+					"name":"Karen",
+					"type":"Student",
+					"Classes":[617, 643, 610]
+				},
+				{
+					"name":"Hamilton",
+					"type":"Teacher",
+					"Classes":[601, 608, 617, 820]
+				},
+				{
+					"name":"Meggie",
+					"type":"Student",
+					"Classes":[700, 617, 755]
+				}
+
+			]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

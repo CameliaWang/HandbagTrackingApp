@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handbag Tracker</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+	<link rel="apple-touch-icon" href="img/logo.png">
+	<link rel="icon" href="img/logo.png">
+
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/pages.js"></script>
+	<script src="js/maps.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/helper.js"></script>
+	<!-- MAP INSERT SCRIPT (only need to load it once)-->
+	<!-- IF YOU WANT TO PUT STH IN GOOGLE MAP, PUT IT IN FRONT OF THE GOOGLE MAP, NOT INSIDE IT. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCARwd2KWu6ZTpgrTIsFALXmYLI3i0Y4nM"
+    async defer></script>
+</head>
+<body>
+
+	
+<!-- <iframe src="http://camelliawang.com/aau/wnm617/m15/" width="375px" height="812px">
+  <p>Your browser does not support iframes.</p>
+</iframe> -->
+
+
+	<!-- LOGIN PAGE -->
+	<section class="container" data-role="page" id="page-login">
+		<div class="login login-bg media-imge">
+			<div class="centered-child">
+			<div class="welcome">
+					
+				<div data-role="main" class="login-title">
+				<h2>WELCOME TO<br>HANDBAGTRACKER</h2>
+				</div>
+			</div>
+					<form id="form-login" data-role="none" data-ajax="false" class="login-form">
+						<div class="form-control">
+						<p>Please Login</p>
+
+							<input class="form-input" type="text" id="form-login-username" data-role="none" placeholder="Username: user0">
+						</div>
+						<div class="form-control">		
+							<div class="password-input">
+								<input class="form-input" type="password" id="form-login-password" data-role="none" placeholder="Password: pass">
+							</div>
+						</div>
+						<div class="body-text-small margin-bottom-2em float-right">
+							<a href="#page-forget-password" class="text-underline">
+								Forgot password?
+							</a>
+						</div>
+						<input class="form-button btn-big" type="submit" data-role="none" value="Login" style="-webkit-appearance: none;">
+					<div class="body-text-small">
+					Don't have an account?<a href="#page-signup" style="text-decoration: underline;"> Sign up</a>
+						</div>
+					</form>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FORGET PASSWORD PAGE -->
+	<section data-role="page" id="page-forget-password">
+				<header data-role="header">
+			<h1>PASSWORD RECOVERY</h1>
+			<div class="back">
+				<a href="#page-login" data-transition="slidedown" data-role="none"><img src="img/back.svg" alt="" width="16"></a>
+			</div>
+
+		</header>
+		<div data-role="main" class="flex-parent flex-vertical flex-align-center flex-justify-center password-recovery-bg">
+
+
+	
+	<p style="font-weight: 600; color: #4c5999;">Please enter email and we'll send you <br>a new password after you confirmed.</p>
+
+			<form data-role="none" style="width:70vw;">
+				<div class="form-control">
+					<input class="email-box form-input" type="text" id="email-forget-password" data-role="none" placeholder="Email">
+				</div>
+				
+				<div class="form-control">
+					<input class="form-button btn-big" type="submit" data-role="none" value="Send" style="-webkit-appearance: none;">
+					<div class="signup-link">
+						<a href="#page-login">Cancel?</a>
+					</div>
+				</div>
+			</form>
+			
+
+		</div>
+	</section>
+
+
+	<!-- SIGNUP PAGE -->
+	<section data-role="page" id="page-signup">
+		<div data-role="main" class="flex-parent flex-vertical flex-align-center flex-justify-center">
+						<div class="back">
+				<a href="#page-list" data-transition="slidedown" data-role="none"><img src="img/back.svg" alt="" width="16"></a>
+			</div>
+			<form id="form-signup" data-role="none" style="width:70vw;">
+				<div class="form-control">
+					<label class="form-label" for="form-signup-username">Choose a Username</label>
+					<input class="form-input" type="text" id="form-signup-username" data-role="none">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="form-signup-email">Type your Email</label>
+					<input class="form-input" type="text" id="form-signup-email" data-role="none">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="form-signup-password">Set a Password</label>
+					<input class="form-input" type="password" id="form-signup-password" data-role="none">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="form-signup-password-confirm">Confirm the Password</label>
+					<input class="form-input" type="password" id="form-signup-password-confirm" data-role="none">
+				</div>
+				
+				<div class="form-control">
+					<input class="form-button btn-big" type="submit" data-role="none" value="Sign Up" style="-webkit-appearance: none;">
+					<div class="signup-link">
+						<a href="#page-login">Cancel?</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- MAP PAGE -->
+	<section data-role="page" id="page-map">
+		<header data-role="header">
+			<h1>Handbag Tracker</h1>
+				<div class="flex-none filter-icon" style="margin-top: 2.5em;
+    margin-left: .5em;">
+				<img src="img/sort.svg" class="icon" style="width: 26px; height: auto;" data-toggle="#page-map .filter-box">
+				</div>
+				<div class="filter-box">
+				</div>
+				<div class="flex-none filter-icon" style="margin-left: .5em; margin-top: .5em; font-size: 38px;">
+					<a href="#page-add-new" data-role="none" class="add-btn">
+						<img src="img/add.svg" alt="" width="22px">
+					</a>
+				</div>
+		</header>
+		<!-- <div class="map-home-bg"> -->
+
+		<div class="container" data-role="main">
+
+			    <div class="map"></div>
+			    <div class="map-menu" data-deactivate="#page-map .map-menu"></div>
+		</div>
+		<footer data-role="footer">
+			<ul class="nav flex-parent" style="text-align:center">
+				<li class="flex-child active"><a href="#page-map"><img src="img/location.svg" alt="" width="16"></a></li>
+				<li class="flex-child"><a href="#page-list"><img src="img/list.svg" alt="" width="16"></a></li>
+				<li class="flex-child"><a href="#page-profile"><img src="img/profile.svg" alt="" width="16"></a></li>
+			</ul>
+		</footer>
+	</section>
+
+
+	<!-- LIST PAGE -->
+<section data-role="page" id="page-list">
+		<header data-role="header">
+			<h1>Handbag List</h1>
+			<ul class="nav flex-parent">
+				<li class="flex-child"></li>
+				<li class="flex-none">
+					<a href="#page-add-new" data-role="none" class="add-btn">
+						<img src="img/add.svg" alt="" width="16px" style="margin-top: 1em; margin-right: 1em;">
+					</a>
+				</li>
+			</ul>
+		</header>
+
+	<div class="list-page-bg" data-role="main">
+	<div class="container list-page">
+		<div data-role="main" class="flex-parent flex-vertical">
+			<div class="flex-none" style="position:relative;">
+				<form class="search-box flex-parent flex-align-center" data-role="none" data-ajax="false">
+					<div class="flex-child">
+						<label class="hotdog list-search-box" data-role="none" data-ajax="false">
+							<input type="search" data-ajax="false" data-role="none" class="list-search" placeholder="Search...">
+						</label>
+					</div>
+					<div class="flex-none">
+						<img src="img/sort.svg" class="icon" style="margin-left:1em" data-toggle="#page-list .filter-box">
+					</div>
+				<div class="filter-box">
+				</div>
+				</form>
+			</div>
+			<div class="flex-child" style="position:relative;">
+				<div class="bag-list"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+		<footer data-role="footer">
+			<ul class="nav flex-parent" style="text-align:center">
+				<li class="flex-child"><a href="#page-map"><img src="img/location.svg" alt="" width="16"></a></li>
+				<li class="flex-child active"><a href="#page-list"><img src="img/list.svg" alt="" width="16"></a></li>
+				<li class="flex-child"><a href="#page-profile"><img src="img/profile.svg" alt="" width="16"></a></li>
+			</ul>
+		</footer>
+</section>
+
+
+<!-- ADD NEW PAGE -->
+	<section data-role="page" id="page-add-new">
+	<div data-role="main" class="flex-parent flex-vertical flex-align-center">	
+			<div class="back">
+                <a href="#back" data-rel="back" data-role="none" data-ajax="false"><img src="img/back.svg" alt="" width="16"></a>
+            </div>
+			<div class="big-title"><h1>Add New Handbag</h1>
+			</div>
+
+		<div class="add-img-div" data-role="none" style="text-align: center;">
+
+			<form id="list-add-form" data-role="none" data-ajax="false" style="width:70vw;">
+				<label class="add-img imagepicker imagepicker-replace thumbnail" data-role="none">
+					<input type="file" data-role="none">
+				</label>
+				<div class="form-control">
+					<label class="form-label" for="list-add-name">Create a name</label>
+					<input class="form-input" type="text" id="list-add-name" data-role="none" style="text-align: center;">
+				</div>				
+				<div class="form-control">
+					<label class="form-label" for="list-add-brand">What's the brand</label>
+					<input class="form-input" type="text" id="list-add-brand" data-role="none" style="text-align: center;">
+				</div>				
+				<div class="form-control">
+					<label class="form-label" for="list-add-type">What type</label>
+					<!-- <input class="form-input" type="text" id="form-addnew-size" data-role="none"> -->                    
+					   <div class="addnew-selections selection-field flex-justify-center" id="list-add-type">
+					    
+					      <input type="radio" id="type-bagpack-purse" name="choose-type" value="bagpackPurse" data-role="none" checked="">
+					      <label class="sort-btn" for="type-bagpack-purse"data-role="none">BagpackPurse</label>
+
+					      <input type="radio" id="type-hobo-bag" name="choose-type" value="hoboBag" data-role="none">
+					      <label class="sort-btn" for="type-hobo-bag" data-role="none">HoboBag</label>
+
+					      <input type="radio" id="type-bucket-bag" name="choose-type" value="bucketBag" data-role="none">
+					      <label class="sort-btn" for="type-bucket-bag" data-role="none">BucketBag</label>					      
+
+					      <input type="radio" id="type-minaudiere-clutch" name="choose-type" value="minaudiereClutch" data-role="none" checked="">
+					      	<label class="sort-btn" for="type-minaudiere-clutch" data-role="none">MinaudiereClutch</label>
+
+					      <input type="radio" id="type-messenger-bag" name="choose-type" value="messengerBag" data-role="none">
+					      <label class="sort-btn" for="type-messenger-bag" data-role="none">MessengerBag</label>
+
+					      <input type="radio" id="type-baguette-bag" name="choose-type" value="baguetteBag" data-role="none">
+					      <label class="sort-btn" for="type-baguette-bag" data-role="none">BaguetteBag</label>
+					    </div>
+				</div>
+
+				<div class="form-control">
+					<input class="form-button btn-big submit-add-new" type="submit" data-role="none"  data-ajax="false" value="Add" style="margin-top: 2em;-webkit-appearance: none;">
+
+				</div>
+			</form>
+		</div>
+	</div>
+	</section>
+
+
+<!-- BAG DETAILS PAGE -->
+<section data-role="page" id="page-detail" style="min-height: 100%;">
+<div data-role="main" class="flex-parent flex-vertical flex-align-center flex-justify-center">
+	<div class="list-page-bg bag-detail-page">	
+
+			<header data-role="header">
+				<h1>Handbag Detail</h1>
+			<div class="back">
+                <a href="#page-list" data-role="none"><img src="img/back.svg" alt="" width="16"></a>
+            </div>
+				<div class="close">
+					<a href="#page-bag-edit" data-role="none"><img src="img/edit.svg" alt="" width="16"></a>
+				</div>
+			</header>
+
+		<div class="flex-parent flex-vertical">
+			<div class="bag-profile-top"></div>
+
+		<div id="add-location-modal" class="modal">
+			<div class="modal-back" data-deactivate="#add-location-modal"></div>
+			<form class="modal-content" id="add-location-form" data-ajax="false">
+				<div class="flex-none">
+						<a href="#" data-deactivate="#add-location-modal"><img src="img/close.svg" alt="" width="16" class="modal-close"></a>
+				</div>
+				<div class="modal-head flex-parent">
+					
+					<div class="flex-child">Add New Location</div>
+				</div>
+				<div class="modal-body">
+					<input type="hidden" id="add-location-lat" data-role="none">
+					<input type="hidden" id="add-location-lng" data-role="none">
+						
+					<div class="form-control">
+						<label class="form-label" for="add-location-description" style="font-size: 1em; color: #25283a; font-weight: 400; padding: 1em 0 0;">Description</label>
+						<textarea class="form-input" id="add-location-description" data-role="none" style="padding-bottom: 0;"></textarea>
+					</div>
+				</div>
+				<div class="modal-foot">
+					<input class="form-button btn-big" type="submit" data-role="none" value="Submit" data-deactivate="#add-location-modal" style="-webkit-appearance: none;">
+				</div>
+			</form>
+		</div>
+			<div class="bag-profile-bottom flex-child">
+				<div class="map"></div>
+			</div>
+		</div>
+
+	</div>
+</div>
+</section>
+
+<!-- BAG EDIT PAGE -->
+	<section data-role="page" id="page-bag-edit">
+	<div data-role="main" class="flex-parent flex-vertical flex-align-center">
+
+		<div class="bag-edit-content"></div>
+
+	</div>
+	</section>
+
+	<!-- PROFILE PAGE -->
+<section data-role="page" id="page-profile">
+<div data-role="main" class="profile-page">
+		<header data-role="header">
+			<h1>Profile</h1>
+			<ul class="nav flex-parent" style="text-align:center">
+				<li class="flex-none ui-btn-left">
+					<a href="#page-setting" data-role="none" class="add-btn">
+						<img src="img/setting.svg" alt="" width="16px" style="margin-top: 0.5em; margin-right: 0.5em;">
+					</a>
+				</li>
+				<li class="flex-none ui-btn-right">
+					<a href="#page-edit-profile" data-role="none" class="add-btn open-edit-user">
+						<img src="img/edit.svg" alt="" width="16px" style="margin-top: 0.5em; margin-right: 0.5em;">
+					</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			<div class="user-profile"></div>
+		</div>
+</div>
+		<footer data-role="footer">
+			<ul class="nav flex-parent" style="text-align:center">
+				<li class="flex-child"><a href="#page-map"><img src="img/location.svg" alt="" width="16"></a></li>
+				<li class="flex-child"><a href="#page-list"><img src="img/list.svg" alt="" width="16"></a></li>
+				<li class="flex-child active"><a href="#page-profile"><img src="img/profile.svg" alt="" width="16"></a></li>
+			</ul>
+		</footer>
+</section>
+
+
+<!-- SETTINGS PAGE -->
+	<section data-role="page" id="page-setting" class="pink-bg">
+			<header data-role="header">
+			<h1>Settings</h1>
+			<div class="back">
+                <a href="#back" data-rel="back" data-role="none"><img src="img/back.svg" alt="" width="16"></a>
+            </div>
+
+		</header>
+		<div data-role="main" class="flex-parent flex-vertical flex-align-center flex-justify-center">	
+
+		<div class="setting-div">
+			<form id="form-setting" data-role="none" style="width:70vw;">
+					<div class="settting-box">
+						<div class="small-title">Privacy</div>
+						<div class="flex-parent margin-top-10px">
+							<div class="flex-child">
+								<div class="subtitle-white">
+									Enable FaceID
+								</div>
+							</div>
+							<div class="flex-child">
+	<!-- The toggle elements below here is from https://codepen.io/bronkula/pen/GNdryo  -->
+								<div class="toggle" data-role="none">
+								  <input type="checkbox" id="toggle2" class="toggle-input" data-role="none">
+								  <label for="toggle2" class="toggle-label">
+								    <span class="toggle-button" data-role="none"></span>
+								  </label>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="settting-box">
+						<div class="small-title">Notification</div>
+						<div class="flex-parent margin-top-10px">
+							<div class="flex-child">
+								<div class="subtitle-white">
+									Enable Notification
+								</div>
+							</div>
+							<div class="flex-child">
+								<div class="toggle" data-role="none">
+								  <input type="checkbox" id="toggle3" class="toggle-input" data-role="none">
+								  <label for="toggle3" class="toggle-label">
+								    <span class="toggle-button" data-role="none"></span>
+								  </label>
+								</div>
+	<!-- The toggle elements above here is from https://codepen.io/bronkula/pen/GNdryo  -->
+							</div>
+						</div>
+					</div>					
+					<div class="settting-box">
+						<div class="small-title">About</div>
+						<div class="flex-parent margin-top-10px">
+							<div class="flex-child">
+								<div class="subtitle-white">
+									Privacy Policy
+								</div>
+							</div>
+							<div class="flex-child">
+								<a href="#">
+								<img src="img/next.svg" alt="" width="12" style="float: right; margin-top: 15px;">
+								</a>
+							</div>
+						</div>
+					</div>					
+					<div class="settting-box">
+						<div class="small-title">Help Center</div>
+						<div class="flex-parent margin-top-10px">
+							<div class="flex-child">
+								<div class="subtitle-white">
+									Customer Services
+								</div>
+							</div>
+							<div class="flex-child">
+								<a href="#">
+								<img src="img/next.svg" alt="" width="12" style="float: right; margin-top: 15px;">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="logout text-underline"><p><a href="#page-login">Log Out?</a></p></div>
+		</div>
+	</div>
+	</section>
+
+<!-- EDIT PROFILE PAGE -->
+			<section data-role="page" id="page-edit-profile" class="pink-bg">
+			<header data-role="header">
+			<h1>Edit Profile</h1>
+			<div class="back">
+                <a href="#back" data-rel="back" data-role="none"><img src="img/back.svg" alt="" width="16"></a>
+            </div>
+		</header>
+		<div data-role="main" class="flex-parent flex-vertical flex-align-center">	
+<div class="edit-user-profile" style="width: 80%;"></div>
+	</div>
+
+	</section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

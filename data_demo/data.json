@@ -1,0 +1,802 @@
+[
+  {
+    "id": 0,
+    "name": "Ingram Hooper",
+    "username": "user0",
+    "email": "user0@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/789/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Eargo",
+        "type": "dog",
+        "breed": "Bulldog",
+        "img": "https://via.placeholder.com/400/772/fff/?text=Eargo",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Zidox",
+        "type": "dog",
+        "breed": "Bulldog",
+        "img": "https://via.placeholder.com/400/916/fff/?text=Zidox",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Maxemia",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/737/fff/?text=Maxemia",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Endipine",
+        "type": "dog",
+        "breed": "Bulldog",
+        "img": "https://via.placeholder.com/400/886/fff/?text=Endipine",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Comverges",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/736/fff/?text=Comverges",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Comtour",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/910/fff/?text=Comtour",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Bisba",
+        "type": "dog",
+        "breed": "bijon",
+        "img": "https://via.placeholder.com/400/768/fff/?text=Bisba",
+        "locations": []
+      },
+      {
+        "id": 7,
+        "name": "Arctiq",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/790/fff/?text=Arctiq",
+        "locations": []
+      },
+      {
+        "id": 8,
+        "name": "Realysis",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/893/fff/?text=Realysis",
+        "locations": []
+      },
+      {
+        "id": 9,
+        "name": "Softmicro",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/969/fff/?text=Softmicro",
+        "locations": []
+      },
+      {
+        "id": 10,
+        "name": "Inventure",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/945/fff/?text=Inventure",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Benjamin Finley",
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/882/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Fossiel",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/893/fff/?text=Fossiel",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Obones",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/953/fff/?text=Obones",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Electonic",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/965/fff/?text=Electonic",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Zeam",
+        "type": "dog",
+        "breed": "Chihuahua",
+        "img": "https://via.placeholder.com/400/916/fff/?text=Zeam",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Steeltab",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/832/fff/?text=Steeltab",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Conjurica",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/972/fff/?text=Conjurica",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Intradisk",
+        "type": "dog",
+        "breed": "Chihuahua",
+        "img": "https://via.placeholder.com/400/998/fff/?text=Intradisk",
+        "locations": []
+      },
+      {
+        "id": 7,
+        "name": "Zepitope",
+        "type": "dog",
+        "breed": "bijon",
+        "img": "https://via.placeholder.com/400/970/fff/?text=Zepitope",
+        "locations": []
+      },
+      {
+        "id": 8,
+        "name": "Aquamate",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/758/fff/?text=Aquamate",
+        "locations": []
+      },
+      {
+        "id": 9,
+        "name": "Jumpstack",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/921/fff/?text=Jumpstack",
+        "locations": []
+      },
+      {
+        "id": 10,
+        "name": "Comvene",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/830/fff/?text=Comvene",
+        "locations": []
+      },
+      {
+        "id": 11,
+        "name": "Poshome",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/756/fff/?text=Poshome",
+        "locations": []
+      },
+      {
+        "id": 12,
+        "name": "Kiggle",
+        "type": "dog",
+        "breed": "bijon",
+        "img": "https://via.placeholder.com/400/805/fff/?text=Kiggle",
+        "locations": []
+      },
+      {
+        "id": 13,
+        "name": "Bristo",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/797/fff/?text=Bristo",
+        "locations": []
+      },
+      {
+        "id": 14,
+        "name": "Boilcat",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/814/fff/?text=Boilcat",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Booker Burns",
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/896/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Rotodyne",
+        "type": "dog",
+        "breed": "Chihuahua",
+        "img": "https://via.placeholder.com/400/938/fff/?text=Rotodyne",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Deepends",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/946/fff/?text=Deepends",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Limage",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/869/fff/?text=Limage",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Progenex",
+        "type": "dog",
+        "breed": "Bulldog",
+        "img": "https://via.placeholder.com/400/775/fff/?text=Progenex",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Prowaste",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/985/fff/?text=Prowaste",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Uni",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/775/fff/?text=Uni",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Liquidoc",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/931/fff/?text=Liquidoc",
+        "locations": []
+      },
+      {
+        "id": 7,
+        "name": "Megall",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/968/fff/?text=Megall",
+        "locations": []
+      },
+      {
+        "id": 8,
+        "name": "Furnigeer",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/802/fff/?text=Furnigeer",
+        "locations": []
+      },
+      {
+        "id": 9,
+        "name": "Anixang",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/983/fff/?text=Anixang",
+        "locations": []
+      },
+      {
+        "id": 10,
+        "name": "Splinx",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/875/fff/?text=Splinx",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Case Ballard",
+    "username": "user3",
+    "email": "user3@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/904/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Silodyne",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/830/fff/?text=Silodyne",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Mangelica",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/902/fff/?text=Mangelica",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Snowpoke",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/947/fff/?text=Snowpoke",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Bedlam",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/731/fff/?text=Bedlam",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Combot",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/729/fff/?text=Combot",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Entroflex",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/836/fff/?text=Entroflex",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Yogasm",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/757/fff/?text=Yogasm",
+        "locations": []
+      },
+      {
+        "id": 7,
+        "name": "Puria",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/775/fff/?text=Puria",
+        "locations": []
+      },
+      {
+        "id": 8,
+        "name": "Prismatic",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/979/fff/?text=Prismatic",
+        "locations": []
+      },
+      {
+        "id": 9,
+        "name": "Xsports",
+        "type": "dog",
+        "breed": "bijon",
+        "img": "https://via.placeholder.com/400/792/fff/?text=Xsports",
+        "locations": []
+      },
+      {
+        "id": 10,
+        "name": "Tropoli",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/761/fff/?text=Tropoli",
+        "locations": []
+      },
+      {
+        "id": 11,
+        "name": "Comtract",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/785/fff/?text=Comtract",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Buckner Landry",
+    "username": "user4",
+    "email": "user4@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/880/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Besto",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/852/fff/?text=Besto",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Evidends",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/762/fff/?text=Evidends",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Photobin",
+        "type": "dog",
+        "breed": "Bulldog",
+        "img": "https://via.placeholder.com/400/771/fff/?text=Photobin",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Hotcakes",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/815/fff/?text=Hotcakes",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Pawnagra",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/724/fff/?text=Pawnagra",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Imperium",
+        "type": "dog",
+        "breed": "bijon",
+        "img": "https://via.placeholder.com/400/900/fff/?text=Imperium",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Xleen",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/701/fff/?text=Xleen",
+        "locations": []
+      },
+      {
+        "id": 7,
+        "name": "Zillactic",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/737/fff/?text=Zillactic",
+        "locations": []
+      },
+      {
+        "id": 8,
+        "name": "Geeketron",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/808/fff/?text=Geeketron",
+        "locations": []
+      },
+      {
+        "id": 9,
+        "name": "Idego",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/983/fff/?text=Idego",
+        "locations": []
+      },
+      {
+        "id": 10,
+        "name": "Tripsch",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/977/fff/?text=Tripsch",
+        "locations": []
+      },
+      {
+        "id": 11,
+        "name": "Deviltoe",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/934/fff/?text=Deviltoe",
+        "locations": []
+      },
+      {
+        "id": 12,
+        "name": "Combogene",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/725/fff/?text=Combogene",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Lily Mccall",
+    "username": "user5",
+    "email": "user5@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/966/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Interloo",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/792/fff/?text=Interloo",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Microluxe",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/899/fff/?text=Microluxe",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Magnafone",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/742/fff/?text=Magnafone",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Zentry",
+        "type": "horse",
+        "breed": "White",
+        "img": "https://via.placeholder.com/400/742/fff/?text=Zentry",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Zytrax",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/800/fff/?text=Zytrax",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Delphide",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/774/fff/?text=Delphide",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Lexicondo",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/892/fff/?text=Lexicondo",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Juana Weiss",
+    "username": "user6",
+    "email": "user6@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/741/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Daido",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/970/fff/?text=Daido",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Apextri",
+        "type": "dog",
+        "breed": "Chihuahua",
+        "img": "https://via.placeholder.com/400/926/fff/?text=Apextri",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Buzzmaker",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/820/fff/?text=Buzzmaker",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Cowtown",
+        "type": "dog",
+        "breed": "Shepherd",
+        "img": "https://via.placeholder.com/400/858/fff/?text=Cowtown",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Netropic",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/923/fff/?text=Netropic",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Envire",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/994/fff/?text=Envire",
+        "locations": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Hanson Holmes",
+    "username": "user7",
+    "email": "user7@gmail.com",
+    "password": "pass",
+    "img": "https://via.placeholder.com/400/750/fff",
+    "animals": [
+      {
+        "id": 0,
+        "name": "Gadtron",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/940/fff/?text=Gadtron",
+        "locations": []
+      },
+      {
+        "id": 1,
+        "name": "Netplode",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/752/fff/?text=Netplode",
+        "locations": []
+      },
+      {
+        "id": 2,
+        "name": "Zentury",
+        "type": "cat",
+        "breed": "Ginger",
+        "img": "https://via.placeholder.com/400/915/fff/?text=Zentury",
+        "locations": []
+      },
+      {
+        "id": 3,
+        "name": "Furnafix",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/785/fff/?text=Furnafix",
+        "locations": []
+      },
+      {
+        "id": 4,
+        "name": "Capscreen",
+        "type": "cat",
+        "breed": "Shorthair",
+        "img": "https://via.placeholder.com/400/760/fff/?text=Capscreen",
+        "locations": []
+      },
+      {
+        "id": 5,
+        "name": "Tribalog",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/990/fff/?text=Tribalog",
+        "locations": []
+      },
+      {
+        "id": 6,
+        "name": "Playce",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/820/fff/?text=Playce",
+        "locations": []
+      },
+      {
+        "id": 7,
+        "name": "Quizmo",
+        "type": "dog",
+        "breed": "Chihuahua",
+        "img": "https://via.placeholder.com/400/910/fff/?text=Quizmo",
+        "locations": []
+      },
+      {
+        "id": 8,
+        "name": "Cormoran",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/773/fff/?text=Cormoran",
+        "locations": []
+      },
+      {
+        "id": 9,
+        "name": "Primordia",
+        "type": "horse",
+        "breed": "Andalusian",
+        "img": "https://via.placeholder.com/400/890/fff/?text=Primordia",
+        "locations": []
+      },
+      {
+        "id": 10,
+        "name": "Equitox",
+        "type": "dog",
+        "breed": "bijon",
+        "img": "https://via.placeholder.com/400/750/fff/?text=Equitox",
+        "locations": []
+      },
+      {
+        "id": 11,
+        "name": "Inear",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/837/fff/?text=Inear",
+        "locations": []
+      },
+      {
+        "id": 12,
+        "name": "Comtrail",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/985/fff/?text=Comtrail",
+        "locations": []
+      },
+      {
+        "id": 13,
+        "name": "Grainspot",
+        "type": "cat",
+        "breed": "Siamese",
+        "img": "https://via.placeholder.com/400/927/fff/?text=Grainspot",
+        "locations": []
+      },
+      {
+        "id": 14,
+        "name": "Matrixity",
+        "type": "horse",
+        "breed": "Black",
+        "img": "https://via.placeholder.com/400/920/fff/?text=Matrixity",
+        "locations": []
+      }
+    ]
+  }
+]
